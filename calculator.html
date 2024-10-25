@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+<body>
+    <div class="box1"> 
+        <input type="text" class="text-box" name="display" >
+    </div>
+    <div class="box2">
+        <div class="line1">
+            <button class="iteams1" onclick="appendNumber('7')">7</button>
+            <button class="iteams2" onclick="appendNumber('4')">4</button>
+            <button class="iteams3" onclick="appendNumber('1')">1</button>
+            <button class="iteams4" onclick="appendNumber('.')">.</button>
+        </div>
+        <div class="line2">
+            <button class="iteams5" onclick="appendNumber('8')">8</button>
+            <button class="iteams6" onclick="appendNumber('5')">5</button>
+            <button class="iteams7" onclick="appendNumber('2')">2</button>
+            <button class="iteams8" onclick="appendNumber('0')">0</button>
+        </div>
+        <div class="line3">
+            <button class="iteams9" onclick="appendNumber('9')">9</button>
+            <button class="iteams10" onclick="appendNumber('6')">6</button>
+            <button class="iteams11" onclick="appendNumber('3')">3</button>
+            <button class="iteams12" onclick="appendOperator('/')">/</button>
+        </div>
+        <div class="line4">
+            <button class="iteams13" onclick="deleteLast()">DEL</button>
+            <button class="iteams14" onclick="appendOperator('+')">+</button>
+            <button class="iteams15" onclick="appendOperator('-')">-</button>
+            <button class="iteams16" onclick="appendOperator('*')">*</button>
+        </div>
+        <div class="line5">
+            <button class="iteams17" onclick="clearDisplay()">Reset</button>
+            <button class="iteams18" onclick="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
